@@ -41,8 +41,8 @@ const INTERESTS = [
 /* ── Animation variants ── */
 const slide = {
   enter: (d: number) => ({ x: d > 0 ? 48 : -48, opacity: 0 }),
-  center: { x: 0, opacity: 1, transition: { duration: 0.38, ease: [0.32, 0, 0.18, 1] as number[] } },
-  exit: (d: number) => ({ x: d > 0 ? -48 : 48, opacity: 0, transition: { duration: 0.28, ease: [0.32, 0, 0.18, 1] as number[] } }),
+  center: { x: 0, opacity: 1, transition: { duration: 0.38, ease: [0.32, 0, 0.18, 1] as [number, number, number, number] } },
+  exit: (d: number) => ({ x: d > 0 ? -48 : 48, opacity: 0, transition: { duration: 0.28, ease: [0.32, 0, 0.18, 1] as [number, number, number, number] } }),
 }
 
 /* ── Shared premium input ── */
