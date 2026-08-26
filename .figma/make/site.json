@@ -1,0 +1,10 @@
+{
+  "description": "Create engaging homepage hero sections that captivate visitors and highlight key messages to boost user engagement and brand impact.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
