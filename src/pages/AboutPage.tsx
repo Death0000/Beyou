@@ -2,6 +2,7 @@ import { Nav } from '../components/Nav'
 import HeroCarousel from '../components/HeroCarousel'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router'
+import profileImg from '../imports/profile.jpg'
 
 const ITEMS = [
   {
@@ -65,7 +66,7 @@ const EDU = [
 function WhoIAm() {
   return (
     <section style={{ backgroundColor: '#050505', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-      <div className="px-8 md:px-14" style={{ paddingTop: 96, paddingBottom: 96 }}>
+      <div className="px-8 md:px-14 max-w-6xl mx-auto w-full" style={{ paddingTop: 96, paddingBottom: 96 }}>
 
         {/* Label */}
         <motion.p
@@ -91,7 +92,7 @@ function WhoIAm() {
             {/* Photo */}
             <div className="relative overflow-hidden" style={{ borderRadius: 20, aspectRatio: '4/5', maxWidth: 400 }}>
               <img
-                src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                src={profileImg}
                 alt="Sahil Khan"
                 draggable={false}
                 className="w-full h-full object-cover"
